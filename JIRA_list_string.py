@@ -21,5 +21,8 @@ class jiraListString():
                     # add the item and the separator string
                     long_string += str(item) + str(separator)
             return long_string
+        # if only one item is in the list, just display it
+        elif len(itemList) == 1:
+            return itemList[0]
         else:
-            return ""
+            return None
